@@ -34,9 +34,10 @@ spec:
           image: dquyen2806/graphql
           ports:
             - containerPort: 8020
-          livenessProbe:
-            httpGet:
-              path: /healthcheck
-              port: 8025
-            initialDelaySeconds: 30
-            timeoutSeconds: 1
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
