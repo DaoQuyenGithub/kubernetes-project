@@ -1,0 +1,11 @@
+type CustomerResponse {
+    id : Long
+    firstName : String
+    lastName : String
+    cards : [CardResponse]
+}
+
+input CreateCustomerRequest {
+    firstName : String
+    lastName : String
+}

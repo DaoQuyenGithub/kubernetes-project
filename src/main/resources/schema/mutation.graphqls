@@ -1,0 +1,5 @@
+type Mutation {
+    createCustomer(createStudentRequest : CreateCustomerRequest) : CustomerResponse
+    createCard(createCardRequest : CreateCardRequest) : CardResponse
+    createTransaction(createTransactionRequest : CreateTransactionRequest1) : TransactionResponse
+}

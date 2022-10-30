@@ -1,0 +1,11 @@
+type TransactionResponse {
+    sourceAccount : String
+    totalAmount : String
+    creationDate : String
+}
+
+
+input CreateTransactionRequest1 {
+    sourceAccount : String
+    totalAmount : String
+}

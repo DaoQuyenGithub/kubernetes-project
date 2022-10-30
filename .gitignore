@@ -1,0 +1,11 @@
+# Commons
+target
+*.class
+
+# IntelliJ IDE
+.idea//*
+*.iml
+
+
+# Application specifics
+/.factorypath

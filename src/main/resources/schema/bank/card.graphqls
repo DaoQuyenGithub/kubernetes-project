@@ -1,0 +1,17 @@
+type CardResponse {
+    cardNo : String
+    expiredDate : String
+    cvv : String
+}
+
+type CardForCustomerResponse {
+    cardNo : String
+    expiredDate : String
+    cvv : String
+}
+
+input CreateCardRequest {
+    cardNo : String
+    expiredDate : String
+    cvv : String
+}

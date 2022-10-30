@@ -1,0 +1,14 @@
+type Query {
+    getAllCustomer : [CustomerResponse]
+    getAllCard : [CardResponse]
+    getAllTransaction: [TransactionResponse]
+}
+
+scalar Long
+#scalar Date
+
+
+
+
+
+

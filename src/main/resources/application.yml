@@ -1,0 +1,33 @@
+server:
+  port: 8084
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://127.0.0.1:1433;databaseName=graph_ql
+    username: sa
+    password: 123456
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      dialect: org.hibernate.dialect.SQLServer2012Dialect
+      ddl-auto: update
+
+
+#logging:
+#  level:
+#    org.springframework.jdbc.core:
+#      JdbcTemplate: DEBUG
+#      StatementCreatorUtils: TRACE
+
+#by default /graphiql
+graphiql:
+  mapping: /app-ui
+  enabled: true
+  servlet:
+    mapping: /student-service
+
+
